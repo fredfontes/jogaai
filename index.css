@@ -26,14 +26,29 @@ body {
   position: relative;
   width: 24px;
   height: 24px;
-  flex-shrink: 0;
   display: none;
 }
-.logo-icon {
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
+.bubble-div,
+.logo-button {
+  flex-shrink: 0;
+}
+.logo-jogaai-icon {
+  width: 224.53px;
+  height: 31.93px;
+  flex-shrink: 0;
+}
+.logo-button {
   cursor: pointer;
+  border: 0;
+  padding: var(--padding-md);
+  background-color: transparent;
+  width: 272.53px;
+  height: 79.93px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 .home-b {
   position: relative;
@@ -44,7 +59,7 @@ body {
   text-align: left;
   cursor: pointer;
 }
-.frame-a {
+.menulink-home-a {
   text-decoration: none;
   display: flex;
   flex-direction: row;
@@ -61,12 +76,6 @@ body {
   text-align: left;
   display: inline-block;
 }
-.desktop-nav,
-.link-de-sampa {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
 .link-de-sampa {
   text-decoration: none;
   border-top: 0 solid var(--black);
@@ -74,13 +83,49 @@ body {
   border-bottom: 0 solid var(--black);
   border-left: 1px solid var(--black);
   box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
   padding: var(--padding-2xs) var(--padding-md);
+  align-items: center;
   justify-content: center;
   cursor: pointer;
 }
-.desktop-nav {
-  justify-content: flex-end;
+.image-icon,
+.vector-icon {
+  position: relative;
+  flex-shrink: 0;
+}
+.image-icon {
+  width: 25px;
+  height: 20px;
+  object-fit: cover;
+  display: none;
+}
+.vector-icon {
+  width: 19.8px;
+  height: 19.8px;
+}
+.desktop-nav,
+.icon-close {
+  align-items: center;
   gap: var(--gap-0);
+}
+.icon-close {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+}
+.desktop-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 .icon-menu {
   width: 32px;
@@ -164,18 +209,18 @@ body {
   justify-content: center;
   gap: var(--gap-md);
 }
-.image-icon,
-.vector-icon {
+.image-icon1,
+.vector-icon1 {
   position: relative;
   width: 16px;
   flex-shrink: 0;
 }
-.image-icon {
+.image-icon1 {
   height: 11px;
   object-fit: cover;
   display: none;
 }
-.vector-icon {
+.vector-icon1 {
   height: 9.87px;
 }
 .hero-div,
@@ -293,10 +338,12 @@ body {
 .authors-div,
 .tags-div {
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
   gap: var(--gap-sm);
+}
+.tags-div {
+  flex-direction: row;
 }
 .authors-div {
   flex-direction: column;
@@ -589,7 +636,7 @@ body {
   color: var(--branding);
   text-align: left;
 }
-.frame-a1,
+.frame-a,
 .frame-div3 {
   align-self: stretch;
   border-top: 0 solid var(--black);
@@ -603,21 +650,27 @@ body {
   justify-content: flex-start;
   cursor: pointer;
 }
-.frame-a1 {
+.frame-a {
   text-decoration: none;
   display: flex;
 }
 .frame-div3 {
   display: none;
 }
+.frame-div2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
 .frame-div2,
+.frame-div4 {
+  flex-direction: column;
+  gap: var(--gap-0);
+}
 .frame-div4,
 .frame-nav {
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-end;
-  gap: var(--gap-0);
 }
 .frame-div4,
 .frame-nav {
@@ -656,6 +709,12 @@ body {
   padding: var(--padding-xl);
   box-sizing: border-box;
   justify-content: center;
+}
+.logo-icon {
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  cursor: pointer;
 }
 .steam-icon,
 .steam-icon1 {
@@ -701,7 +760,7 @@ body {
   justify-content: space-between;
 }
 .footer-div,
-.home-main {
+.home-div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -711,7 +770,7 @@ body {
   align-self: stretch;
   justify-content: center;
 }
-.home-main {
+.home-div {
   position: relative;
   background-color: var(--black);
   width: 100%;
@@ -722,7 +781,8 @@ body {
   font-family: var(--h1);
 }
 @media screen and (max-width: 768px) {
-  .desktop-nav {
+  .desktop-nav,
+  .icon-close {
     display: none;
   }
   .wrap-article,
@@ -731,8 +791,34 @@ body {
   }
 }
 @media screen and (max-width: 428px) {
-  .desktop-nav {
+  .logo-jogaai-icon {
+    width: 168px;
+    height: 24px;
+  }
+  .icon-close {
     display: none;
+  }
+  .desktop-nav {
+    background-color: var(--white);
+    display: none;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 9999;
+  }
+  .desktop-nav.animate {
+    animation: 0.5s ease 0s 0.1 normal forwards slide-in-right;
+  }
+  @keyframes slide-in-right {
+    0% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
   .header {
     position: fixed;
