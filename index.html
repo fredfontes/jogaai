@@ -20,53 +20,40 @@
   </head>
   <body>
     <div class="home-div">
-      <div class="header-div">
+      <header class="header" id="header">
         <div class="bubble-div">
           <div class="bkg-div"></div>
           <img class="bkg-icon" alt="" src="public/bkg.svg" />
         </div>
         <div class="content-div">
-          <div class="logo-div" id="logoContainer">
-            <div class="logo-jogaai-div">
-              <img class="vector-icon" alt="" src="public/vector.svg" /><img
-                class="image-icon"
-                alt=""
-                src="public/image@2x.png"
-              />
-            </div>
-          </div>
-          <div class="menu-div">
-            <div class="frame-div">
-              <b class="home-b" id="homeText">Home</b>
-            </div>
-            <div class="frame-div1" id="frameContainer1">
-              <div class="de-sampa-div">de_sampa</div>
-            </div>
-            <a class="frame-a" id="frameLink"
-              ><div class="de-sampa-div">de_copa</div></a
-            >
-            <div class="frame-div1" id="frameContainer2">
-              <div class="de-sampa-div">de_club</div>
-            </div>
-            <a class="frame-a" href="#de_rave" id="frameLink1"
-              ><div class="de-sampa-div">de_rave</div></a
-            >
-            <div class="frame-div1" id="frameContainer3">
-              <div class="de-sampa-div">cs_parking</div>
-            </div>
-            <div class="hamburguer-div" id="hamburguerContainer">
-              <div class="icon-menu">
-                <img
-                  class="image-icon1"
-                  alt=""
-                  src="public/image1@2x.png"
-                /><img class="vector-icon1" alt="" src="public/vector1.svg" />
-              </div>
-            </div>
-          </div>
+          <img
+            class="logo-icon"
+            alt=""
+            src="public/logo-jogaai.svg"
+            id="logoImage"
+          />
+          <nav class="nav" id="menu">
+            <nav class="desktop-nav" id="menu-desktop">
+              <a class="frame-a"><b class="home-b" id="homeText">Home</b></a
+              ><a class="frame-a1" id="frameLink1"
+                ><div class="de-sampa-div">de_sampa</div></a
+              ><a class="frame-a1" id="frameLink2"
+                ><div class="de-sampa-div">de_copa</div></a
+              ><a class="frame-a1" id="frameLink3"
+                ><div class="de-sampa-div">de_club</div></a
+              ><a class="frame-a1" href="#de_rave" id="frameLink4"
+                ><div class="de-sampa-div">de_rave</div></a
+              ><a class="frame-a1" id="frameLink5"
+                ><div class="de-sampa-div">cs_parking</div></a
+              >
+            </nav>
+            <aside class="hamburguer-aside" id="menu-hamburguer">
+              <img class="icon-menu" alt="" src="public/icon--menu.svg" />
+            </aside>
+          </nav>
         </div>
-      </div>
-      <div class="hero-div">
+      </header>
+      <div class="hero-div" id="hero">
         <div class="title-div">
           <div class="csgo-maps-div">
             <p class="csgo-p">CS:GO</p>
@@ -76,223 +63,210 @@
             de_sampa 1.6 remake and much more...
           </div>
         </div>
-        <div class="icons-expand-more" id="iconsExpandMore">
-          <img class="image-icon2" alt="" src="public/image2@2x.png" /><img
-            class="vector-icon2"
+        <a class="icons-expand-more" id="iconsExpandMore"
+          ><img class="image-icon" alt="" src="public/image@2x.png" /><img
+            class="vector-icon"
             alt=""
-            src="public/vector2.svg"
-          />
-        </div>
+            src="public/vector.svg"
+        /></a>
       </div>
-      <div class="container-de-sampa">
-        <div class="wrap-div">
-          <img
-            class="de-sampa-2-icon"
-            alt=""
-            src="public/de-sampa-2@2x.png"
-            id="deSampa2Image"
-          />
-          <div class="content-div1">
-            <div class="title-div1">de_sampa</div>
-            <div class="text-div">
-              <div class="text-div1">
-                Old and loved São Paulo City map with new textures and models
-                ported from Counter-strike 1.6 to new CS:GO version.
-              </div>
-            </div>
-            <div class="authors-div">
-              <div class="authors-div1">Authors</div>
-              <div class="tags-div">
-                <div class="tag-mataleone" id="tagMataleone">
-                  <div class="value-div">Mataleone</div>
-                </div>
-                <div class="tag-mataleone" id="tagCrocodilo">
-                  <div class="value-div1">Crocodilo</div>
-                </div>
-                <div class="tag-mataleone" id="tagKurtabble">
-                  <div class="value-div1">kurtabble</div>
+      <main class="main" id="more">
+        <section class="container-de-sampa" id="de_sampa">
+          <article class="wrap-article">
+            <img
+              class="de-sampa-2-icon"
+              alt=""
+              src="public/de_sampa@2x.jpg"
+              id="deSampa2Image"
+            />
+            <div class="content-div1">
+              <div class="title-div1">de_sampa</div>
+              <div class="text-div">
+                <div class="text-div1">
+                  Old and loved São Paulo City map with new textures and models
+                  ported from Counter-strike 1.6 to new CS:GO version.
                 </div>
               </div>
-            </div>
-            <div class="actions-div">
-              <button class="more-info-button" id="moreInfoButton">
-                <b class="secondary-b">more info</b>
-              </button>
-              <div class="play-now-div" id="playNowContainer">
-                <b class="primary-b">Play now</b>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container-de-copa">
-        <div class="wrap-div">
-          <div class="content-div1">
-            <div class="title-div1">de_copa</div>
-            <div class="text-div">
-              <div class="text-div3">
-                <p class="csgo-p">
-                  Another Brazilian CS:GO map: Copacabana Beach representation.
-                </p>
-                <p class="maps">A map for AWP enthusiasts..</p>
-              </div>
-            </div>
-            <div class="authors-div">
-              <div class="authors-div1">Authors</div>
-              <div class="tags-div">
-                <div class="tag-mataleone1" id="tagMataleone1">
-                  <div class="value-div1">Mataleone</div>
-                </div>
-                <div class="tag-mataleone1" id="tagCrocodilo1">
-                  <div class="value-div1">Crocodilo</div>
-                </div>
-                <div class="tag-mataleone" id="tagKurtabble1">
-                  <div class="value-div1">kurtabble</div>
+              <div class="authors-div">
+                <div class="authors-div1">Authors</div>
+                <div class="tags-div">
+                  <button class="tag-mataleone" id="tagMataleone">
+                    <div class="value-div">Mataleone</div></button
+                  ><button class="tag-mataleone" id="tagCrocodilo">
+                    <div class="value-div1">Crocodilo</div></button
+                  ><button class="tag-mataleone" id="tagKurtabble">
+                    <div class="value-div1">kurtabble</div>
+                  </button>
                 </div>
               </div>
-            </div>
-            <div class="actions-div1">
-              <div class="more-info-div" id="moreInfoContainer">
-                <b class="primary-b">more info</b>
-              </div>
-              <div class="play-now-div1" id="playNowContainer1">
-                <b class="primary-b">Play now</b>
-              </div>
-            </div>
-          </div>
-          <img
-            class="de-sampa-2-icon"
-            alt=""
-            src="public/de-sampa-21@2x.png"
-            id="deSampa2Image1"
-          />
-        </div>
-      </div>
-      <div class="container-de-sampa">
-        <div class="wrap-div">
-          <img
-            class="de-sampa-2-icon"
-            alt=""
-            src="public/de-sampa-22@2x.png"
-            id="deSampa2Image2"
-          />
-          <div class="content-div1">
-            <div class="title-div3">de_club</div>
-            <div class="text-div">
-              <div class="text-div5">
-                Old and loved São Paulo City map with new textures and models
-                ported
+              <div class="actions-div">
+                <button class="more-info-button" id="moreInfoButton">
+                  <b class="secondary-b">more info</b></button
+                ><button class="play-now-button" id="playNowButton">
+                  <b class="primary-b">Play now</b>
+                </button>
               </div>
             </div>
-            <div class="authors-div">
-              <div class="authors-div1">Authors</div>
-              <div class="tags-div">
-                <div class="tag-mataleone1" id="tagMataleone2">
-                  <div class="value-div">Mataleone</div>
-                </div>
-                <div class="tag-mataleone1" id="tagCrocodilo2">
-                  <div class="value-div1">Crocodilo</div>
-                </div>
-                <div class="tag-mataleone" id="tagKurtabble2">
-                  <div class="value-div1">kurtabble</div>
+          </article>
+        </section>
+        <section class="container-de-copa" id="de_copa">
+          <article class="wrap-article">
+            <div class="content-div1">
+              <div class="title-div1">de_copa</div>
+              <div class="text-div">
+                <div class="text-div3">
+                  <p class="csgo-p">
+                    Another Brazilian CS:GO map: Copacabana Beach
+                    representation.
+                  </p>
+                  <p class="maps">A map for AWP enthusiasts..</p>
                 </div>
               </div>
-            </div>
-            <div class="actions-div1">
-              <div class="more-info-div" id="moreInfoContainer1">
-                <b class="primary-b">more info</b>
-              </div>
-              <div class="play-now-div1" id="playNowContainer2">
-                <b class="primary-b">Play now</b>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container-de-rave">
-        <div class="wrap-div">
-          <div class="content-div1">
-            <div class="title-div3">de_rave</div>
-            <div class="text-div">
-              <div class="text-div1">
-                Old and loved São Paulo City map with new textures and models
-                ported from Counter-strike 1.6 to new CS:GO version.
-              </div>
-            </div>
-            <div class="authors-div">
-              <div class="authors-div1">Authors</div>
-              <div class="tags-div">
-                <div class="tag-mataleone1" id="tagMataleone3">
-                  <div class="value-div1">Mataleone</div>
-                </div>
-                <div class="tag-mataleone1" id="tagCrocodilo3">
-                  <div class="value-div1">Crocodilo</div>
-                </div>
-                <div class="tag-mataleone" id="tagKurtabble3">
-                  <div class="value-div1">kurtabble</div>
+              <div class="authors-div">
+                <div class="authors-div1">Authors</div>
+                <div class="tags-div">
+                  <button class="tag-mataleone1" id="tagMataleone1">
+                    <div class="value-div1">Mataleone</div></button
+                  ><button class="tag-mataleone1" id="tagCrocodilo1">
+                    <div class="value-div1">Crocodilo</div></button
+                  ><button class="tag-mataleone" id="tagKurtabble1">
+                    <div class="value-div1">kurtabble</div>
+                  </button>
                 </div>
               </div>
-            </div>
-            <div class="actions-div1">
-              <div class="more-info-div" id="moreInfoContainer2">
-                <b class="primary-b">more info</b>
-              </div>
-              <div class="play-now-div1" id="playNowContainer3">
-                <b class="primary-b">Play now</b>
-              </div>
-            </div>
-          </div>
-          <img
-            class="de-sampa-2-icon"
-            alt=""
-            src="public/de-sampa-23@2x.png"
-            id="deSampa2Image3"
-          />
-        </div>
-      </div>
-      <div class="container-cs-parking">
-        <div class="wrap-div">
-          <img
-            class="de-sampa-2-icon"
-            alt=""
-            src="public/de-sampa-24@2x.png"
-            id="deSampa2Image4"
-          />
-          <div class="content-div1">
-            <div class="title-div3">cs_parking</div>
-            <div class="text-div">
-              <div class="text-div1">
-                Old and loved São Paulo City map with new textures and models
-                ported from Counter-strike 1.6 to new CS:GO version.
+              <div class="actions-div">
+                <button class="more-info-button1" id="moreInfoButton1">
+                  <b class="secondary-b">more info</b></button
+                ><button class="play-now-button1" id="playNowButton1">
+                  <b class="primary-b">Play now</b>
+                </button>
               </div>
             </div>
-            <div class="authors-div">
-              <div class="authors-div1">Authors</div>
-              <div class="tags-div">
-                <div class="tag-mataleone1" id="tagMataleone4">
-                  <div class="value-div">Mataleone</div>
-                </div>
-                <div class="tag-mataleone1" id="tagCrocodilo4">
-                  <div class="value-div1">Crocodilo</div>
-                </div>
-                <div class="tag-mataleone" id="tagKurtabble4">
-                  <div class="value-div1">kurtabble</div>
+            <img
+              class="de-sampa-2-icon"
+              alt=""
+              src="public/de_copa@2x.jpg"
+              id="deSampa2Image1"
+            />
+          </article>
+        </section>
+        <section class="container-de-sampa" id="de_club">
+          <article class="wrap-article">
+            <img
+              class="de-sampa-2-icon"
+              alt=""
+              src="public/de_club@2x.jpg"
+              id="deSampa2Image2"
+            />
+            <div class="content-div1">
+              <div class="title-div3">de_club</div>
+              <div class="text-div">
+                <div class="text-div5">
+                  Old and loved São Paulo City map with new textures and models
+                  ported
                 </div>
               </div>
-            </div>
-            <div class="actions-div1">
-              <div class="more-info-div" id="moreInfoContainer3">
-                <b class="primary-b">more info</b>
+              <div class="authors-div">
+                <div class="authors-div1">Authors</div>
+                <div class="tags-div">
+                  <button class="tag-mataleone1" id="tagMataleone2">
+                    <div class="value-div">Mataleone</div></button
+                  ><button class="tag-mataleone1" id="tagCrocodilo2">
+                    <div class="value-div1">Crocodilo</div></button
+                  ><button class="tag-mataleone" id="tagKurtabble2">
+                    <div class="value-div1">kurtabble</div>
+                  </button>
+                </div>
               </div>
-              <div class="play-now-div1" id="playNowContainer4">
-                <b class="primary-b">Play now</b>
+              <div class="actions-div">
+                <button class="more-info-button" id="moreInfoButton2">
+                  <b class="secondary-b">more info</b></button
+                ><button class="play-now-button1" id="playNowButton2">
+                  <b class="primary-b">Play now</b>
+                </button>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="cta-div">
-        <div class="frame-div4">
+          </article>
+        </section>
+        <section class="container-de-rave" id="de_rave">
+          <article class="wrap-article">
+            <div class="content-div1">
+              <div class="title-div3">de_rave</div>
+              <div class="text-div">
+                <div class="text-div1">
+                  Old and loved São Paulo City map with new textures and models
+                  ported from Counter-strike 1.6 to new CS:GO version.
+                </div>
+              </div>
+              <div class="authors-div">
+                <div class="authors-div1">Authors</div>
+                <div class="tags-div">
+                  <button class="tag-mataleone1" id="tagMataleone3">
+                    <div class="value-div1">Mataleone</div></button
+                  ><button class="tag-mataleone1" id="tagCrocodilo3">
+                    <div class="value-div1">Crocodilo</div></button
+                  ><button class="tag-mataleone" id="tagKurtabble3">
+                    <div class="value-div1">kurtabble</div>
+                  </button>
+                </div>
+              </div>
+              <div class="actions-div">
+                <button class="more-info-button3" id="moreInfoButton3">
+                  <b class="secondary-b">more info</b></button
+                ><button class="play-now-button" id="playNowButton3">
+                  <b class="primary-b">Play now</b>
+                </button>
+              </div>
+            </div>
+            <img
+              class="de-sampa-2-icon"
+              alt=""
+              src="public/de_rave@2x.jpg"
+              id="deSampa2Image3"
+            />
+          </article>
+        </section>
+        <section class="container-cs-parking" id="cs_parking">
+          <article class="wrap-article">
+            <img
+              class="de-sampa-2-icon4"
+              alt=""
+              src="public/cs_parking@2x.jpg"
+              id="deSampa2Image4"
+            />
+            <div class="content-div1">
+              <div class="title-div3">cs_parking</div>
+              <div class="text-div">
+                <div class="text-div1">
+                  Old and loved São Paulo City map with new textures and models
+                  ported from Counter-strike 1.6 to new CS:GO version.
+                </div>
+              </div>
+              <div class="authors-div">
+                <div class="authors-div1">Authors</div>
+                <div class="tags-div">
+                  <button class="tag-mataleone1" id="tagMataleone4">
+                    <div class="value-div">Mataleone</div></button
+                  ><button class="tag-mataleone1" id="tagCrocodilo4">
+                    <div class="value-div1">Crocodilo</div></button
+                  ><button class="tag-mataleone" id="tagKurtabble4">
+                    <div class="value-div1">kurtabble</div>
+                  </button>
+                </div>
+              </div>
+              <div class="actions-div">
+                <button class="more-info-button" id="moreInfoButton4">
+                  <b class="secondary-b">more info</b></button
+                ><button class="play-now-button" id="playNowButton4">
+                  <b class="primary-b">Play now</b>
+                </button>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+      <section class="cta-section" id="cta">
+        <div class="frame-div">
           <img class="steam-logo-icon" alt="" src="public/steam-logo.svg" /><img
             class="steam-logo-icon1"
             alt=""
@@ -303,72 +277,61 @@
               <p class="csgo-p">Visit our Steam Workshop</p>
               <p class="maps">and favorite our maps</p>
             </div>
-            <div class="play-now-div5" id="playNowContainer5">
-              <b class="primary-b">visit now</b>
-            </div>
+            <button class="visit-now-button" id="visitNowButton">
+              <b class="primary-b5">visit now</b>
+            </button>
           </div>
         </div>
-      </div>
+      </section>
       <div class="footer-div">
         <div class="bubble-div1">
           <div class="bkg-div"></div>
           <img class="bkg-icon" alt="" src="public/bkg1.svg" />
         </div>
         <div class="links-div">
-          <div class="frame-div6">
-            <div class="frame-div7">
-              <div class="frame-div8" id="frameContainer6">
-                <b class="de-sampa-div">About</b>
-              </div>
-              <div class="frame-div8" id="frameContainer7">
-                <div class="de-sampa-div">Who we are</div>
-              </div>
-              <div class="frame-div8" id="frameContainer8">
-                <div class="de-sampa-div">Authors</div>
-              </div>
-              <div class="frame-div11" id="frameContainer9">
-                <div class="de-sampa-div">Staff</div>
+          <div class="frame-div2">
+            <div class="frame-div3">
+              <a class="frame-a6" id="frameLink6"><b class="about">About</b></a
+              ><a class="frame-a6" id="frameLink7"
+                ><div class="about">Who we are</div></a
+              ><a class="frame-a6" id="frameLink8"
+                ><div class="about">Authors</div></a
+              >
+              <div class="frame-div4" id="frameContainer2">
+                <div class="about">Staff</div>
               </div>
             </div>
-            <div class="logo-jogaai-div">
-              <div class="frame-div8" id="frameContainer11">
-                <b class="de-sampa-div">CS:GO Maps</b>
-              </div>
-              <div class="frame-div8" id="frameContainer12">
-                <div class="de-sampa-div">de_sampa</div>
-              </div>
-              <div class="frame-div8" id="frameContainer13">
-                <div class="de-sampa-div">de_copa</div>
-              </div>
-              <div class="frame-div8" id="frameContainer14">
-                <div class="de-sampa-div">de_club</div>
-              </div>
-              <div class="frame-div8" id="frameContainer15">
-                <div class="de-sampa-div">de_rave</div>
-              </div>
-              <div class="frame-div8" id="frameContainer16">
-                <div class="de-sampa-div">cs_parking</div>
-              </div>
+            <div class="main">
+              <a class="frame-a6" id="frameLink9"
+                ><b class="about">CS:GO Maps</b></a
+              ><a class="frame-a6" id="frameLink10"
+                ><div class="about">de_sampa</div></a
+              ><a class="frame-a6" id="frameLink11"
+                ><div class="about">de_copa</div></a
+              ><a class="frame-a6" id="frameLink12"
+                ><div class="about">de_club</div></a
+              ><a class="frame-a6" id="frameLink13"
+                ><div class="about">de_rave</div></a
+              ><a class="frame-a6" id="frameLink14"
+                ><div class="about">cs_parking</div></a
+              >
             </div>
           </div>
           <img
             class="shield-badge-1-icon"
             alt=""
-            src="public/shield-badge-1@2x.png"
+            src="public/the_internet_defense_league@2x.png"
             id="shieldBadge1Image"
           />
         </div>
         <div class="social-div">
-          <div class="logo-div1" id="logoContainer1">
-            <div class="logo-jogaai-div">
-              <img class="vector-icon" alt="" src="public/vector3.svg" /><img
-                class="image-icon"
-                alt=""
-                src="public/image@2x.png"
-              />
-            </div>
-          </div>
-          <div class="actions-div">
+          <img
+            class="logo-icon"
+            alt=""
+            src="public/logo-jogaai-footer.svg"
+            id="logoImage1"
+          />
+          <nav class="actions-div" id="social">
             <img
               class="steam-icon"
               alt=""
@@ -403,15 +366,15 @@
               alt=""
               src="public/facebook-icon1@2x.png"
             />
-          </div>
+          </nav>
         </div>
       </div>
     </div>
 
     <script>
-      var logoContainer = document.getElementById("logoContainer");
-      if (logoContainer) {
-        logoContainer.addEventListener("click", function () {
+      var logoImage = document.getElementById("logoImage");
+      if (logoImage) {
+        logoImage.addEventListener("click", function () {
           window.open("https://joga.ai");
         });
       }
@@ -423,42 +386,42 @@
         });
       }
       
-      var frameContainer1 = document.getElementById("frameContainer1");
-      if (frameContainer1) {
-        frameContainer1.addEventListener("click", function () {
+      var frameLink1 = document.getElementById("frameLink1");
+      if (frameLink1) {
+        frameLink1.addEventListener("click", function () {
           window.open("#de_sampa");
         });
       }
       
-      var frameLink = document.getElementById("frameLink");
-      if (frameLink) {
-        frameLink.addEventListener("click", function () {
+      var frameLink2 = document.getElementById("frameLink2");
+      if (frameLink2) {
+        frameLink2.addEventListener("click", function () {
           window.open("#de_copa");
         });
       }
       
-      var frameContainer2 = document.getElementById("frameContainer2");
-      if (frameContainer2) {
-        frameContainer2.addEventListener("click", function () {
+      var frameLink3 = document.getElementById("frameLink3");
+      if (frameLink3) {
+        frameLink3.addEventListener("click", function () {
           window.open("de_club");
         });
       }
       
-      var frameLink1 = document.getElementById("frameLink1");
-      if (frameLink1) {
-        frameLink1.addEventListener("click", function () {
+      var frameLink4 = document.getElementById("frameLink4");
+      if (frameLink4) {
+        frameLink4.addEventListener("click", function () {
           window.open("de_rave");
         });
       }
       
-      var frameContainer3 = document.getElementById("frameContainer3");
-      if (frameContainer3) {
-        frameContainer3.addEventListener("click", function () {
+      var frameLink5 = document.getElementById("frameLink5");
+      if (frameLink5) {
+        frameLink5.addEventListener("click", function () {
           window.open("cs_parking");
         });
       }
       
-      var hamburguerContainer = document.getElementById("hamburguerContainer");
+      var hamburguerContainer = document.getElementById("menu-hamburguer");
       if (hamburguerContainer) {
         hamburguerContainer.addEventListener("click", function () {
           window.open("#menu");
@@ -507,9 +470,9 @@
         });
       }
       
-      var playNowContainer = document.getElementById("playNowContainer");
-      if (playNowContainer) {
-        playNowContainer.addEventListener("click", function () {
+      var playNowButton = document.getElementById("playNowButton");
+      if (playNowButton) {
+        playNowButton.addEventListener("click", function () {
           window.open(
             "https://steamcommunity.com/sharedfiles/filedetails/?id=2838554847"
           );
@@ -537,16 +500,16 @@
         });
       }
       
-      var moreInfoContainer = document.getElementById("moreInfoContainer");
-      if (moreInfoContainer) {
-        moreInfoContainer.addEventListener("click", function () {
+      var moreInfoButton1 = document.getElementById("moreInfoButton1");
+      if (moreInfoButton1) {
+        moreInfoButton1.addEventListener("click", function () {
           window.open("/maps/de_copa");
         });
       }
       
-      var playNowContainer1 = document.getElementById("playNowContainer1");
-      if (playNowContainer1) {
-        playNowContainer1.addEventListener("click", function () {
+      var playNowButton1 = document.getElementById("playNowButton1");
+      if (playNowButton1) {
+        playNowButton1.addEventListener("click", function () {
           window.open(
             "https://steamcommunity.com/sharedfiles/filedetails/?id=2127432718"
           );
@@ -588,16 +551,16 @@
         });
       }
       
-      var moreInfoContainer1 = document.getElementById("moreInfoContainer1");
-      if (moreInfoContainer1) {
-        moreInfoContainer1.addEventListener("click", function () {
+      var moreInfoButton2 = document.getElementById("moreInfoButton2");
+      if (moreInfoButton2) {
+        moreInfoButton2.addEventListener("click", function () {
           window.open("/maps/de_club");
         });
       }
       
-      var playNowContainer2 = document.getElementById("playNowContainer2");
-      if (playNowContainer2) {
-        playNowContainer2.addEventListener("click", function () {
+      var playNowButton2 = document.getElementById("playNowButton2");
+      if (playNowButton2) {
+        playNowButton2.addEventListener("click", function () {
           window.open(
             "https://steamcommunity.com/sharedfiles/filedetails/?id=2165288993"
           );
@@ -625,16 +588,16 @@
         });
       }
       
-      var moreInfoContainer2 = document.getElementById("moreInfoContainer2");
-      if (moreInfoContainer2) {
-        moreInfoContainer2.addEventListener("click", function () {
+      var moreInfoButton3 = document.getElementById("moreInfoButton3");
+      if (moreInfoButton3) {
+        moreInfoButton3.addEventListener("click", function () {
           window.open("/maps/de_rave");
         });
       }
       
-      var playNowContainer3 = document.getElementById("playNowContainer3");
-      if (playNowContainer3) {
-        playNowContainer3.addEventListener("click", function () {
+      var playNowButton3 = document.getElementById("playNowButton3");
+      if (playNowButton3) {
+        playNowButton3.addEventListener("click", function () {
           window.open(
             "https://steamcommunity.com/sharedfiles/filedetails/?id=2113153088"
           );
@@ -676,97 +639,97 @@
         });
       }
       
-      var moreInfoContainer3 = document.getElementById("moreInfoContainer3");
-      if (moreInfoContainer3) {
-        moreInfoContainer3.addEventListener("click", function () {
+      var moreInfoButton4 = document.getElementById("moreInfoButton4");
+      if (moreInfoButton4) {
+        moreInfoButton4.addEventListener("click", function () {
           window.open("/maps/cs_pakrning");
         });
       }
       
-      var playNowContainer4 = document.getElementById("playNowContainer4");
-      if (playNowContainer4) {
-        playNowContainer4.addEventListener("click", function () {
+      var playNowButton4 = document.getElementById("playNowButton4");
+      if (playNowButton4) {
+        playNowButton4.addEventListener("click", function () {
           window.open(
             "https://steamcommunity.com/sharedfiles/filedetails/?id=2131655590"
           );
         });
       }
       
-      var playNowContainer5 = document.getElementById("playNowContainer5");
-      if (playNowContainer5) {
-        playNowContainer5.addEventListener("click", function () {
+      var visitNowButton = document.getElementById("visitNowButton");
+      if (visitNowButton) {
+        visitNowButton.addEventListener("click", function () {
           window.open(
             "https://steamcommunity.com/id/kurtabble/myworkshopfiles/?appid=730"
           );
         });
       }
       
-      var frameContainer6 = document.getElementById("frameContainer6");
-      if (frameContainer6) {
-        frameContainer6.addEventListener("click", function () {
+      var frameLink6 = document.getElementById("frameLink6");
+      if (frameLink6) {
+        frameLink6.addEventListener("click", function () {
           window.open("/about");
         });
       }
       
-      var frameContainer7 = document.getElementById("frameContainer7");
-      if (frameContainer7) {
-        frameContainer7.addEventListener("click", function () {
+      var frameLink7 = document.getElementById("frameLink7");
+      if (frameLink7) {
+        frameLink7.addEventListener("click", function () {
           window.open("/about");
         });
       }
       
-      var frameContainer8 = document.getElementById("frameContainer8");
-      if (frameContainer8) {
-        frameContainer8.addEventListener("click", function () {
+      var frameLink8 = document.getElementById("frameLink8");
+      if (frameLink8) {
+        frameLink8.addEventListener("click", function () {
           window.open("/about/authors");
         });
       }
       
-      var frameContainer9 = document.getElementById("frameContainer9");
-      if (frameContainer9) {
-        frameContainer9.addEventListener("click", function () {
+      var frameContainer2 = document.getElementById("frameContainer2");
+      if (frameContainer2) {
+        frameContainer2.addEventListener("click", function () {
           window.open("/about/staff");
         });
       }
       
-      var frameContainer11 = document.getElementById("frameContainer11");
-      if (frameContainer11) {
-        frameContainer11.addEventListener("click", function () {
+      var frameLink9 = document.getElementById("frameLink9");
+      if (frameLink9) {
+        frameLink9.addEventListener("click", function () {
           window.open("/maps");
         });
       }
       
-      var frameContainer12 = document.getElementById("frameContainer12");
-      if (frameContainer12) {
-        frameContainer12.addEventListener("click", function () {
+      var frameLink10 = document.getElementById("frameLink10");
+      if (frameLink10) {
+        frameLink10.addEventListener("click", function () {
           window.open("/maps/de_sampa");
         });
       }
       
-      var frameContainer13 = document.getElementById("frameContainer13");
-      if (frameContainer13) {
-        frameContainer13.addEventListener("click", function () {
+      var frameLink11 = document.getElementById("frameLink11");
+      if (frameLink11) {
+        frameLink11.addEventListener("click", function () {
           window.open("/maps/de_copa");
         });
       }
       
-      var frameContainer14 = document.getElementById("frameContainer14");
-      if (frameContainer14) {
-        frameContainer14.addEventListener("click", function () {
+      var frameLink12 = document.getElementById("frameLink12");
+      if (frameLink12) {
+        frameLink12.addEventListener("click", function () {
           window.open("/maps/de_club");
         });
       }
       
-      var frameContainer15 = document.getElementById("frameContainer15");
-      if (frameContainer15) {
-        frameContainer15.addEventListener("click", function () {
+      var frameLink13 = document.getElementById("frameLink13");
+      if (frameLink13) {
+        frameLink13.addEventListener("click", function () {
           window.open("/maps/de_rave");
         });
       }
       
-      var frameContainer16 = document.getElementById("frameContainer16");
-      if (frameContainer16) {
-        frameContainer16.addEventListener("click", function () {
+      var frameLink14 = document.getElementById("frameLink14");
+      if (frameLink14) {
+        frameLink14.addEventListener("click", function () {
           window.open("/maps/cs_parking");
         });
       }
@@ -778,9 +741,9 @@
         });
       }
       
-      var logoContainer1 = document.getElementById("logoContainer1");
-      if (logoContainer1) {
-        logoContainer1.addEventListener("click", function () {
+      var logoImage1 = document.getElementById("logoImage1");
+      if (logoImage1) {
+        logoImage1.addEventListener("click", function () {
           window.open("https://joga.ai");
         });
       }
