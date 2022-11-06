@@ -1,0 +1,47 @@
+:root {
+  /* fonts */
+  --h1: Goldman;
+  --text: "Open Sans";
+
+  /* font sizes */
+  --font-size-sm: 10px;
+  --text-size: 16px;
+  --button-big-size: 20px;
+  --h2-size: 24px;
+  --h1-size: 48px;
+
+  /* Colors */
+  --grey-light: #dbdbdb;
+  --grey-dark: #222;
+  --black: #191919;
+  --color-gray-400: rgba(34, 34, 34, 0.01);
+  --branding: #a9d300;
+  --branding-dark: #769400;
+  --white: #fff;
+
+  /* Gaps */
+  --gap-0: 0px;
+  --gap-sm: 16px;
+  --gap-md: 24px;
+  --gap-lg: 32px;
+  --gap-xl: 56px;
+
+  /* Paddings */
+  --padding-3xs: 2px;
+  --padding-2xs: 6.5px;
+  --padding-xs: 8px;
+  --padding-sm: 16px;
+  --padding-md: 24px;
+  --padding-lg: 28px;
+  --padding-xl: 32px;
+  --padding-2xl: 56px;
+  --padding-3xl: 88px;
+
+  /* border radiuses */
+  --br-sm: 2px;
+  --br-md: 4px;
+  --br-lg: 8px;
+
+  /* Effects */
+  --default: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
