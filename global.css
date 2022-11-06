@@ -12,7 +12,7 @@
 
   /* Colors */
   --grey-light: #dbdbdb;
-  --color-gray-200: #222;
+  --grey-dark: #222;
   --black: #191919;
   --color-gray-400: rgba(34, 34, 34, 0.01);
   --branding: #a9d300;
@@ -30,14 +30,16 @@
   --padding-3xs: 2px;
   --padding-2xs: 6.5px;
   --padding-xs: 8px;
-  --padding-sm: 16px;
-  --padding-md: 24px;
-  --padding-lg: 32px;
-  --padding-xl: 56px;
-  --padding-2xl: 88px;
+  --padding-sm: 12px;
+  --padding-md: 16px;
+  --padding-lg: 24px;
+  --padding-xl: 32px;
+  --padding-2xl: 56px;
+  --padding-3xl: 88px;
 
   /* border radiuses */
-  --br-sm: 2px;
-  --br-md: 4px;
-  --br-lg: 8px;
+  --br-xs: 2px;
+  --br-sm: 4px;
+  --br-md: 8px;
+  --br-lg: 16px;
 }

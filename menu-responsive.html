@@ -20,48 +20,98 @@
   </head>
   <body>
     <div class="menu-responsive-div" data-animate-on-scroll>
+      <button class="frame-button" id="drawerframeButton">
+        <div class="frame-div3"><div class="rectangle-div"></div></div>
+        <div class="rectangle-div1"></div>
+      </button>
       <div class="wrap-div">
-        <a class="home-a" href="https://joga.ai" id="drawerhomeLink"
-          ><b class="home-b1">Home</b></a
-        >
-        <div class="csgo-maps-div1">
-          <a class="maps2" href="/maps" id="drawermapsLink"
-            ><b class="home-b1">CS:GO Maps</b></a
-          ><a class="de-sampa1" href="/maps/de_sampa" id="drawerdeSampaLink"
-            ><div class="home-b1">de_sampa</div></a
-          ><a class="de-sampa1" href="/maps/de_copa" id="drawerdeCopaLink"
-            ><div class="home-b1">de_copa</div></a
-          ><a class="de-sampa1" href="/maps/de_club" id="drawerdeClubLink"
-            ><div class="home-b1">de_club</div></a
-          ><a class="de-sampa1" href="/maps/de_rave" id="drawerdeRaveLink"
-            ><div class="home-b1">de_rave</div></a
-          ><a class="de-sampa1" href="/maps/cs_parking" id="drawercsParkingLink"
-            ><div class="home-b1">cs_parking</div></a
-          >
+        <div class="frame-div4">
+          <div class="frame-div5">
+            <a class="home-a" href="https://joga.ai" id="drawerhomeLink"
+              ><b class="home-b1">Home</b></a
+            >
+            <div class="csgo-maps-div1">
+              <a class="maps2" href="/maps" id="drawermapsLink"
+                ><b class="home-b1">CS:GO Maps</b></a
+              ><a class="de-sampa1" href="/maps/de_sampa" id="drawerdeSampaLink"
+                ><div class="home-b1">de_sampa</div></a
+              ><a class="de-sampa1" href="/maps/de_copa" id="drawerdeCopaLink"
+                ><div class="home-b1">de_copa</div></a
+              ><a class="de-sampa1" href="/maps/de_club" id="drawerdeClubLink"
+                ><div class="home-b1">de_club</div></a
+              ><a class="de-sampa1" href="/maps/de_rave" id="drawerdeRaveLink"
+                ><div class="home-b1">de_rave</div></a
+              ><a
+                class="de-sampa1"
+                href="/maps/cs_parking"
+                id="drawercsParkingLink"
+                ><div class="home-b1">cs_parking</div></a
+              >
+            </div>
+            <div class="csgo-maps-div1">
+              <a class="maps2" href="/about" id="draweraboutLink"
+                ><b class="home-b1">About</b></a
+              ><a class="de-sampa1" href="/about" id="draweraboutLink1"
+                ><div class="home-b1">Who we are</div></a
+              ><a class="de-sampa1" href="/authors" id="drawerauthorsLink"
+                ><div class="home-b1">Authors</div></a
+              >
+              <div class="staff-div2" id="drawerstaffContainer">
+                <div class="home-b1">Staff</div>
+              </div>
+            </div>
+          </div>
+          <button class="icon-close" id="drawericonClose">
+            <img class="image-icon1" alt="" src="public/image1@2x.png" /><img
+              class="vector-icon1"
+              alt=""
+              src="public/vector1.svg"
+            />
+          </button>
         </div>
-        <div class="csgo-maps-div1">
-          <a class="maps2" href="/about" id="draweraboutLink"
-            ><b class="home-b1">About</b></a
-          ><a class="de-sampa1" href="/about" id="draweraboutLink1"
-            ><div class="home-b1">Who we are</div></a
-          ><a class="de-sampa1" href="/authors" id="drawerauthorsLink"
-            ><div class="home-b1">Authors</div></a
-          >
-          <div class="staff-div2" id="drawerstaffContainer">
-            <div class="home-b1">Staff</div>
+        <div class="steam-workshop-div">
+          <img
+            class="steam-logo-icon2"
+            alt=""
+            src="public/steam-logo2.svg"
+          /><img
+            class="steam-logo-icon3"
+            alt=""
+            src="public/steam-logo3@2x.png"
+          />
+          <div class="frame-div6">
+            <h3 class="visit-our-steam-workshop-and-f">
+              Visit our Steam Workshop and favorite our maps
+            </h3>
+            <button class="visit-now-button1" id="drawervisitNowButton">
+              <b class="primary-b6">visit now</b>
+            </button>
           </div>
         </div>
       </div>
-      <button class="icon-close" id="drawericonClose">
-        <img class="image-icon1" alt="" src="public/image1@2x.png" /><img
-          class="vector-icon1"
-          alt=""
-          src="public/vector1.svg"
-        />
-      </button>
     </div>
 
     <script>
+      var drawerframeButton = document.getElementById("drawerframeButton");
+      if (drawerframeButton) {
+        drawerframeButton.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      
       var drawerhomeLink = document.getElementById("drawerhomeLink");
       if (drawerhomeLink) {
         drawerhomeLink.addEventListener("click", function () {
@@ -362,6 +412,35 @@
       var drawericonClose = document.getElementById("drawericonClose");
       if (drawericonClose) {
         drawericonClose.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      
+      var drawervisitNowButton = document.getElementById("drawervisitNowButton");
+      if (drawervisitNowButton) {
+        drawervisitNowButton.addEventListener("click", function () {
+          window.open(
+            "https://steamcommunity.com/id/kurtabble/myworkshopfiles/?appid=730"
+          );
+        });
+      }
+      
+      var drawervisitNowButton = document.getElementById("drawervisitNowButton");
+      if (drawervisitNowButton) {
+        drawervisitNowButton.addEventListener("click", function (e) {
           var popup = e.currentTarget.parentNode;
           function isOverlay(node) {
             return !!(
