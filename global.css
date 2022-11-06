@@ -32,16 +32,12 @@
   --padding-xs: 8px;
   --padding-sm: 16px;
   --padding-md: 24px;
-  --padding-lg: 28px;
-  --padding-xl: 32px;
-  --padding-2xl: 56px;
-  --padding-3xl: 88px;
+  --padding-lg: 32px;
+  --padding-xl: 56px;
+  --padding-2xl: 88px;
 
   /* border radiuses */
   --br-sm: 2px;
   --br-md: 4px;
   --br-lg: 8px;
-
-  /* Effects */
-  --default: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
