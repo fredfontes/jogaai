@@ -47,61 +47,68 @@ body {
   flex-shrink: 0;
   display: none;
 }
-.frame-button {
+.frame-button,
+.home-a,
+.maps2 {
+  flex-direction: row;
   cursor: pointer;
+}
+.frame-button {
   border: 0;
   padding: 0;
   background-color: var(--gradient-dark);
   align-self: stretch;
-  display: flex;
-  flex-direction: row;
+  display: none;
   align-items: flex-start;
   justify-content: flex-start;
   gap: var(--gap-0);
 }
-.home-b1 {
-  position: relative;
-  display: inline-block;
-}
-.de-sampa1,
 .home-a,
 .maps2 {
   text-decoration: none;
-  display: flex;
-  flex-direction: row;
+  padding: var(--padding-2xs) var(--padding-lg) var(--padding-2xs) 0;
   box-sizing: border-box;
-  justify-content: flex-start;
-  cursor: pointer;
+  color: var(--black);
 }
 .home-a {
   width: 204.2px;
-  padding: var(--padding-2xs) var(--padding-lg) var(--padding-2xs) 0;
+  display: flex;
   align-items: flex-start;
-  color: var(--black);
+  justify-content: flex-start;
 }
-.de-sampa1,
 .maps2 {
   align-self: stretch;
   align-items: center;
 }
+.csgo-maps-div1,
+.de-sampa1,
 .maps2 {
-  padding: var(--padding-2xs) var(--padding-lg) var(--padding-2xs) 0;
-  color: var(--black);
+  display: flex;
+  justify-content: flex-start;
 }
 .de-sampa1 {
+  text-decoration: none;
+  align-self: stretch;
+  flex-direction: row;
   padding: var(--padding-2xs) var(--padding-md);
+  box-sizing: border-box;
+  align-items: center;
+  cursor: pointer;
   color: inherit;
 }
 .csgo-maps-div1 {
   width: 204.2px;
-  display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: var(--gap-0);
 }
-.csgo-maps-div1,
-.frame-div5,
+.about-us {
+  position: relative;
+  display: inline-block;
+}
+.links-div,
 .staff-div2 {
+  box-sizing: border-box;
   justify-content: flex-start;
 }
 .staff-div2 {
@@ -110,7 +117,6 @@ body {
   border-right: 0 solid var(--black);
   border-bottom: 0 solid var(--black);
   border-left: 1px solid var(--black);
-  box-sizing: border-box;
   display: none;
   flex-direction: row;
   padding: var(--padding-2xs) var(--padding-lg);
@@ -118,10 +124,11 @@ body {
   cursor: pointer;
   color: var(--branding);
 }
-.frame-div5 {
+.links-div {
   flex: 1;
   display: flex;
   flex-direction: column;
+  padding: var(--padding-xl) var(--padding-xs) 0;
   align-items: flex-start;
   gap: var(--gap-sm);
 }
@@ -140,6 +147,11 @@ body {
   width: 19.8px;
   height: 19.8px;
 }
+.frame-div4,
+.icon-close {
+  display: flex;
+  gap: var(--gap-0);
+}
 .icon-close {
   cursor: pointer;
   border: 0;
@@ -148,19 +160,15 @@ body {
   width: 32px;
   height: 32px;
   flex-shrink: 0;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: var(--gap-0);
 }
 .frame-div4 {
   align-self: stretch;
-  display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: var(--gap-sm);
 }
 .steam-logo-icon2,
 .steam-logo-icon3 {
@@ -185,23 +193,23 @@ body {
   font-family: inherit;
   display: inline-block;
 }
-.primary-b6 {
+.secondary-b5 {
   position: relative;
   font-size: var(--button-big-size);
   text-transform: uppercase;
   display: inline-block;
-  font-family: var(--menu-active);
+  font-family: var(--h1);
   color: var(--branding);
-  text-align: left;
+  text-align: center;
 }
-.frame-div6,
-.steam-workshop-div,
-.visit-now-button1 {
+.button,
+.frame-div5,
+.steam-workshop-div {
   align-self: stretch;
   display: flex;
   justify-content: center;
 }
-.visit-now-button1 {
+.button {
   cursor: pointer;
   border: 0;
   padding: var(--padding-sm) var(--padding-xl);
@@ -211,16 +219,15 @@ body {
   box-sizing: border-box;
   align-items: center;
 }
-.visit-now-button1:hover {
-  background-color: var(--grey-light);
-}
-.frame-div6,
+.frame-div5,
 .steam-workshop-div {
   flex-direction: column;
   align-items: flex-start;
   gap: var(--gap-sm);
 }
 .steam-workshop-div {
+  padding: var(--padding-xs);
+  box-sizing: border-box;
   justify-content: flex-end;
 }
 .menu-responsive-div,
@@ -233,9 +240,13 @@ body {
   align-self: stretch;
   flex: 1;
   background-color: var(--branding);
+  border-top: 0 solid var(--branding-light);
+  border-right: 0 solid var(--branding-light);
+  border-bottom: 0 solid var(--branding-light);
+  border-left: 2px solid var(--branding-light);
+  box-sizing: border-box;
   flex-direction: column;
   padding: var(--padding-md);
-  box-sizing: border-box;
   justify-content: space-between;
 }
 .menu-responsive-div {
@@ -250,19 +261,19 @@ body {
   opacity: 0;
   max-width: 90%;
   text-align: left;
-  font-size: var(--menu-active-size);
+  font-size: var(--text-size);
   color: var(--grey-dark);
-  font-family: var(--menu-active);
+  font-family: var(--h1);
 }
 .menu-responsive-div.animate {
   animation: 0.25s ease 0s 1 normal forwards slide-in-right;
 }
 @media screen and (max-width: 428px) {
-  .visit-now-button1,
+  .button,
   .visit-our-steam-workshop-and-f {
     width: 100%;
   }
-  .frame-div6,
+  .frame-div5,
   .steam-workshop-div {
     width: 100%;
     text-align: center;

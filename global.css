@@ -1,11 +1,11 @@
 :root {
   /* fonts */
-  --menu-active: Goldman;
+  --h1: Goldman;
   --text: "Open Sans";
 
   /* font sizes */
   --font-size-sm: 10px;
-  --menu-active-size: 16px;
+  --text-size: 16px;
   --button-big-size: 20px;
   --h2-size: 24px;
   --h1-size: 48px;
@@ -15,8 +15,10 @@
   --grey-dark: #222;
   --black: #191919;
   --color-gray-400: rgba(34, 34, 34, 0.01);
+  --branding-light: #d3f93a;
   --branding: #a9d300;
   --branding-dark: #769400;
+  --color-green-200: #769300;
   --white: #fff;
 
   /* Gaps */
@@ -27,15 +29,19 @@
   --gap-xl: 56px;
 
   /* Paddings */
-  --padding-3xs: 2px;
-  --padding-2xs: 6.5px;
-  --padding-xs: 8px;
-  --padding-sm: 12px;
+  --padding-5xs: 2px;
+  --padding-4xs: 6.5px;
+  --padding-3xs: 6px;
+  --padding-2xs: 8px;
+  --padding-xs: 12px;
+  --padding-sm: 14px;
   --padding-md: 16px;
   --padding-lg: 24px;
   --padding-xl: 32px;
   --padding-2xl: 56px;
-  --padding-3xl: 88px;
+  --padding-3xl: 80px;
+  --padding-4xl: 88px;
+  --padding-5xl: 138px;
 
   /* border radiuses */
   --br-xs: 2px;
