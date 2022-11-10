@@ -1,0 +1,276 @@
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+body {
+  margin: 0;
+  line-height: normal;
+}
+.popup-overlay {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.rectangle-div {
+  position: relative;
+  border-radius: var(--br-lg);
+  background-color: var(--branding);
+  width: 4px;
+  height: 48px;
+  flex-shrink: 0;
+}
+.frame-div2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  padding: 0 var(--padding-lg);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+.frame-button,
+.rectangle-div1 {
+  align-self: stretch;
+  display: none;
+}
+.rectangle-div1 {
+  position: relative;
+  border-radius: var(--br-lg) 0 0 var(--br-lg);
+  background-color: var(--branding);
+  width: 16px;
+  flex-shrink: 0;
+}
+.frame-button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--gradient-dark);
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-0);
+}
+.home-b1 {
+  position: relative;
+  display: inline-block;
+}
+.home-a,
+.maps2 {
+  text-decoration: none;
+  flex-direction: row;
+  padding: var(--padding-3xs) var(--padding-2xl) var(--padding-3xs) 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: var(--black);
+}
+.home-a {
+  width: 204.2px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.maps2 {
+  align-self: stretch;
+  align-items: center;
+}
+.csgo-maps-div,
+.de-sampa1,
+.maps2 {
+  display: flex;
+  justify-content: flex-start;
+}
+.de-sampa1 {
+  text-decoration: none;
+  align-self: stretch;
+  flex-direction: row;
+  padding: var(--padding-3xs) var(--padding-xl);
+  box-sizing: border-box;
+  align-items: center;
+  cursor: pointer;
+  color: inherit;
+}
+.csgo-maps-div {
+  width: 204.2px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-0);
+}
+.links-div,
+.staff-div1 {
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+.staff-div1 {
+  align-self: stretch;
+  border-top: 0 solid var(--black);
+  border-right: 0 solid var(--black);
+  border-bottom: 0 solid var(--black);
+  border-left: 1px solid var(--black);
+  display: none;
+  flex-direction: row;
+  padding: var(--padding-3xs) var(--padding-2xl);
+  align-items: center;
+  cursor: pointer;
+  color: var(--branding);
+}
+.links-div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-3xl) var(--padding-xs) 0;
+  align-items: flex-start;
+  gap: var(--gap-sm);
+}
+.image-icon1,
+.vector-icon1 {
+  position: relative;
+  flex-shrink: 0;
+}
+.image-icon1 {
+  width: 25px;
+  height: 20px;
+  object-fit: cover;
+  display: none;
+}
+.vector-icon1 {
+  width: 19.8px;
+  height: 19.8px;
+}
+.frame-div3,
+.icon-close {
+  display: flex;
+  gap: var(--gap-0);
+}
+.icon-close {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--gradient-dark);
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.frame-div3 {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.steam-logo-icon2 {
+  position: relative;
+  width: 159px;
+  height: 48px;
+  flex-shrink: 0;
+}
+.visit-our-steam-workshop-and-f {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: 0.05em;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+}
+.secondary-b5 {
+  position: relative;
+  font-size: var(--button-big-size);
+  text-transform: uppercase;
+  display: inline-block;
+  font-family: var(--button);
+  color: var(--branding);
+  text-align: center;
+}
+.button1,
+.frame-div4,
+.steam-workshop-div {
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+}
+.button1 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-md) var(--padding-3xl);
+  background-color: var(--black);
+  border-radius: var(--br-sm);
+  flex-direction: row;
+  box-sizing: border-box;
+  align-items: center;
+}
+.frame-div4,
+.steam-workshop-div {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-sm);
+}
+.steam-workshop-div {
+  padding: var(--padding-xs);
+  box-sizing: border-box;
+  justify-content: flex-end;
+}
+.menu-responsive-sub-div,
+.wrap-div1 {
+  border-radius: var(--br-md) 0 0 var(--br-md);
+  display: flex;
+  align-items: flex-start;
+}
+.wrap-div1 {
+  align-self: stretch;
+  flex: 1;
+  background-color: var(--branding);
+  border-top: 0 solid var(--branding-light);
+  border-right: 0 solid var(--branding-light);
+  border-bottom: 0 solid var(--branding-light);
+  border-left: 2px solid var(--branding-light);
+  box-sizing: border-box;
+  flex-direction: column;
+  padding: var(--padding-xl);
+  justify-content: space-between;
+}
+.menu-responsive-sub-div {
+  position: relative;
+  background-color: var(--branding-dark);
+  width: 328px;
+  height: 100%;
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: var(--gap-0);
+  opacity: 0;
+  max-width: 90%;
+  text-align: left;
+  font-size: var(--button-size);
+  color: var(--grey-dark);
+  font-family: var(--button);
+}
+.menu-responsive-sub-div.animate {
+  animation: 0.25s ease 0s 1 normal forwards slide-in-right;
+}
+@media screen and (max-width: 428px) {
+  .button1,
+  .visit-our-steam-workshop-and-f {
+    width: 100%;
+  }
+  .frame-div4,
+  .steam-workshop-div {
+    width: 100%;
+    text-align: center;
+  }
+  .steam-workshop-div {
+    flex-direction: column;
+  }
+}

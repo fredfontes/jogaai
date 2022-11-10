@@ -1,20 +1,24 @@
 :root {
   /* fonts */
-  --h1: Goldman;
+  --button: Goldman;
   --text: "Open Sans";
 
   /* font sizes */
-  --font-size-sm: 10px;
-  --text-size: 16px;
+  --font-size-xs: 10px;
+  --h4-size: 12px;
+  --button-size: 16px;
   --button-big-size: 20px;
   --h2-size: 24px;
   --h1-size: 48px;
+  --hero-title-size: 80px;
 
   /* Colors */
   --grey-light: #dbdbdb;
   --grey-dark: #222;
   --black: #191919;
   --color-gray-400: rgba(34, 34, 34, 0.01);
+  --branding-darkest: rgba(28, 35, 1, 0.9);
+  --color-gray-600: rgba(25, 25, 25, 0.5);
   --branding-light: #d3f93a;
   --branding: #a9d300;
   --branding-dark: #769400;
@@ -29,19 +33,17 @@
   --gap-xl: 56px;
 
   /* Paddings */
-  --padding-5xs: 2px;
-  --padding-4xs: 6.5px;
-  --padding-3xs: 6px;
-  --padding-2xs: 8px;
-  --padding-xs: 12px;
-  --padding-sm: 14px;
-  --padding-md: 16px;
-  --padding-lg: 24px;
-  --padding-xl: 32px;
-  --padding-2xl: 56px;
-  --padding-3xl: 80px;
-  --padding-4xl: 88px;
-  --padding-5xl: 138px;
+  --padding-4xs: 2px;
+  --padding-3xs: 6.5px;
+  --padding-2xs: 6px;
+  --padding-xs: 8px;
+  --padding-sm: 9px;
+  --padding-md: 12px;
+  --padding-lg: 14px;
+  --padding-xl: 16px;
+  --padding-2xl: 24px;
+  --padding-3xl: 32px;
+  --padding-4xl: 56px;
 
   /* border radiuses */
   --br-xs: 2px;

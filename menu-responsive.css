@@ -21,7 +21,7 @@ body {
   bottom: 0;
   right: 0;
 }
-.rectangle-div {
+.rectangle-div4 {
   position: relative;
   border-radius: var(--br-lg);
   background-color: var(--branding);
@@ -29,16 +29,16 @@ body {
   height: 48px;
   flex-shrink: 0;
 }
-.frame-div3 {
+.frame-div18 {
   align-self: stretch;
   display: flex;
   flex-direction: row;
-  padding: 0 14px;
+  padding: 0 var(--padding-lg);
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
 }
-.rectangle-div1 {
+.rectangle-div5 {
   align-self: stretch;
   position: relative;
   border-radius: var(--br-lg) 0 0 var(--br-lg);
@@ -47,71 +47,69 @@ body {
   flex-shrink: 0;
   display: none;
 }
-.frame-button,
-.home-a,
-.maps2 {
-  flex-direction: row;
+.frame-button2 {
   cursor: pointer;
-}
-.frame-button {
   border: 0;
   padding: 0;
   background-color: var(--gradient-dark);
   align-self: stretch;
   display: none;
+  flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
   gap: var(--gap-0);
 }
-.home-a,
-.maps2 {
+.home-b3 {
+  position: relative;
+  display: inline-block;
+}
+.home-a7,
+.maps9 {
   text-decoration: none;
-  padding: var(--padding-2xs) var(--padding-lg) var(--padding-2xs) 0;
+  flex-direction: row;
+  padding: var(--padding-3xs) var(--padding-2xl) var(--padding-3xs) 0;
   box-sizing: border-box;
+  cursor: pointer;
   color: var(--black);
 }
-.home-a {
+.home-a7 {
   width: 204.2px;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.maps2 {
+.maps9 {
   align-self: stretch;
   align-items: center;
 }
-.csgo-maps-div1,
-.de-sampa1,
-.maps2 {
+.csgo-maps-div2,
+.de-sampa7,
+.maps9 {
   display: flex;
   justify-content: flex-start;
 }
-.de-sampa1 {
+.de-sampa7 {
   text-decoration: none;
   align-self: stretch;
   flex-direction: row;
-  padding: var(--padding-2xs) var(--padding-md);
+  padding: var(--padding-3xs) var(--padding-xl);
   box-sizing: border-box;
   align-items: center;
   cursor: pointer;
   color: inherit;
 }
-.csgo-maps-div1 {
+.csgo-maps-div2 {
   width: 204.2px;
   flex-direction: column;
   align-items: flex-start;
   gap: var(--gap-0);
 }
-.about-us {
-  position: relative;
-  display: inline-block;
-}
-.links-div,
-.staff-div2 {
+.links-div12,
+.staff-div10 {
   box-sizing: border-box;
   justify-content: flex-start;
 }
-.staff-div2 {
+.staff-div10 {
   align-self: stretch;
   border-top: 0 solid var(--black);
   border-right: 0 solid var(--black);
@@ -119,40 +117,40 @@ body {
   border-left: 1px solid var(--black);
   display: none;
   flex-direction: row;
-  padding: var(--padding-2xs) var(--padding-lg);
+  padding: var(--padding-3xs) var(--padding-2xl);
   align-items: center;
   cursor: pointer;
   color: var(--branding);
 }
-.links-div {
+.links-div12 {
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding: var(--padding-xl) var(--padding-xs) 0;
+  padding: var(--padding-3xl) var(--padding-xs) 0;
   align-items: flex-start;
   gap: var(--gap-sm);
 }
-.image-icon1,
-.vector-icon1 {
+.image-icon3,
+.vector-icon3 {
   position: relative;
   flex-shrink: 0;
 }
-.image-icon1 {
+.image-icon3 {
   width: 25px;
   height: 20px;
   object-fit: cover;
   display: none;
 }
-.vector-icon1 {
+.vector-icon3 {
   width: 19.8px;
   height: 19.8px;
 }
-.frame-div4,
-.icon-close {
+.frame-div19,
+.icon-close2 {
   display: flex;
   gap: var(--gap-0);
 }
-.icon-close {
+.icon-close2 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -164,26 +162,19 @@ body {
   align-items: center;
   justify-content: center;
 }
-.frame-div4 {
+.frame-div19 {
   align-self: stretch;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.steam-logo-icon2,
-.steam-logo-icon3 {
+.steam-logo-icon14 {
   position: relative;
   width: 159px;
   height: 48px;
   flex-shrink: 0;
 }
-.steam-logo-icon3 {
-  width: 266px;
-  height: 80px;
-  object-fit: cover;
-  display: none;
-}
-.visit-our-steam-workshop-and-f {
+.visit-our-steam-workshop-and-f2 {
   margin: 0;
   align-self: stretch;
   position: relative;
@@ -193,50 +184,50 @@ body {
   font-family: inherit;
   display: inline-block;
 }
-.secondary-b5 {
+.secondary-b8 {
   position: relative;
   font-size: var(--button-big-size);
   text-transform: uppercase;
   display: inline-block;
-  font-family: var(--h1);
+  font-family: var(--button);
   color: var(--branding);
   text-align: center;
 }
-.button,
-.frame-div5,
-.steam-workshop-div {
+.button13,
+.frame-div20,
+.steam-workshop-div2 {
   align-self: stretch;
   display: flex;
   justify-content: center;
 }
-.button {
+.button13 {
   cursor: pointer;
   border: 0;
-  padding: var(--padding-sm) var(--padding-xl);
+  padding: var(--padding-md) var(--padding-3xl);
   background-color: var(--black);
   border-radius: var(--br-sm);
   flex-direction: row;
   box-sizing: border-box;
   align-items: center;
 }
-.frame-div5,
-.steam-workshop-div {
+.frame-div20,
+.steam-workshop-div2 {
   flex-direction: column;
   align-items: flex-start;
   gap: var(--gap-sm);
 }
-.steam-workshop-div {
+.steam-workshop-div2 {
   padding: var(--padding-xs);
   box-sizing: border-box;
   justify-content: flex-end;
 }
 .menu-responsive-div,
-.wrap-div {
+.wrap-div18 {
   border-radius: var(--br-md) 0 0 var(--br-md);
   display: flex;
   align-items: flex-start;
 }
-.wrap-div {
+.wrap-div18 {
   align-self: stretch;
   flex: 1;
   background-color: var(--branding);
@@ -246,7 +237,7 @@ body {
   border-left: 2px solid var(--branding-light);
   box-sizing: border-box;
   flex-direction: column;
-  padding: var(--padding-md);
+  padding: var(--padding-xl);
   justify-content: space-between;
 }
 .menu-responsive-div {
@@ -261,24 +252,24 @@ body {
   opacity: 0;
   max-width: 90%;
   text-align: left;
-  font-size: var(--text-size);
+  font-size: var(--button-size);
   color: var(--grey-dark);
-  font-family: var(--h1);
+  font-family: var(--button);
 }
 .menu-responsive-div.animate {
   animation: 0.25s ease 0s 1 normal forwards slide-in-right;
 }
 @media screen and (max-width: 428px) {
-  .button,
-  .visit-our-steam-workshop-and-f {
+  .button13,
+  .visit-our-steam-workshop-and-f2 {
     width: 100%;
   }
-  .frame-div5,
-  .steam-workshop-div {
+  .frame-div20,
+  .steam-workshop-div2 {
     width: 100%;
     text-align: center;
   }
-  .steam-workshop-div {
+  .steam-workshop-div2 {
     flex-direction: column;
   }
 }
