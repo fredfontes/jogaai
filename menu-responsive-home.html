@@ -26,34 +26,27 @@
       </button>
       <div class="wrap-div2">
         <div class="frame-div6">
-          <div class="links-div1">
-            <a class="home-a1" href="https://joga.ai" id="drawerhomeLink"
-              ><b class="home-b2">Home</b></a
-            >
+          <div class="links-div3">
+            <a class="home-a1" href="./"><b class="home-b2">Home</b></a>
             <div class="csgo-maps-div1">
-              <a class="maps3" href="/maps" id="drawermapsLink"
-                ><b class="home-b2">CS:GO maps</b></a
-              ><a class="de-sampa2" href="/maps/de_sampa" id="drawerdeSampaLink"
+              <a class="maps3" href="/maps"><b class="home-b2">CS:GO maps</b></a
+              ><a class="de-sampa2" href="/maps/de_sampa"
                 ><div class="home-b2">de_sampa</div></a
-              ><a class="de-sampa2" href="/maps/de_copa" id="drawerdeCopaLink"
+              ><a class="de-sampa2" href="/maps/de_copa"
                 ><div class="home-b2">de_copa</div></a
-              ><a class="de-sampa2" href="/maps/de_club" id="drawerdeClubLink"
+              ><a class="de-sampa2" href="/maps/de_club"
                 ><div class="home-b2">de_club</div></a
-              ><a class="de-sampa2" href="/maps/de_rave" id="drawerdeRaveLink"
+              ><a class="de-sampa2" href="/maps/de_rave"
                 ><div class="home-b2">de_rave</div></a
-              ><a
-                class="de-sampa2"
-                href="/maps/cs_parking"
-                id="drawercsParkingLink"
+              ><a class="de-sampa2" href="/maps/cs_parking"
                 ><div class="home-b2">cs_parking</div></a
               >
             </div>
             <div class="csgo-maps-div1">
-              <a class="maps3" href="/about" id="draweraboutLink"
-                ><b class="home-b2">About us</b></a
-              ><a class="de-sampa2" href="/about" id="draweraboutLink1"
+              <a class="maps3" href="/about"><b class="home-b2">About us</b></a
+              ><a class="de-sampa2" href="/about"
                 ><div class="home-b2">Who we are</div></a
-              ><a class="de-sampa2" href="/about/authors" id="drawerauthorsLink"
+              ><a class="de-sampa2" href="/authors"
                 ><div class="home-b2">Authors</div></a
               >
               <div class="staff-div3" id="drawerstaffContainer">
@@ -75,9 +68,12 @@
             <h3 class="visit-our-steam-workshop-and-f1">
               Visit our Steam Workshop and favorite our maps
             </h3>
-            <button class="button2" id="drawerbutton">
-              <b class="secondary-b6">visit now</b>
-            </button>
+            <a
+              class="button-a1"
+              href="https://steamcommunity.com/id/kurtabble/myworkshopfiles/?appid=730"
+              target="_blank"
+              ><b class="secondary-b6">visit now</b></a
+            >
           </div>
         </div>
       </div>
@@ -87,276 +83,6 @@
       var drawerframeButton = document.getElementById("drawerframeButton");
       if (drawerframeButton) {
         drawerframeButton.addEventListener("click", function (e) {
-          var popup = e.currentTarget.parentNode;
-          function isOverlay(node) {
-            return !!(
-              node &&
-              node.classList &&
-              node.classList.contains("popup-overlay")
-            );
-          }
-          while (popup && !isOverlay(popup)) {
-            popup = popup.parentNode;
-          }
-          if (isOverlay(popup)) {
-            popup.style.display = "none";
-          }
-        });
-      }
-      
-      var drawerhomeLink = document.getElementById("drawerhomeLink");
-      if (drawerhomeLink) {
-        drawerhomeLink.addEventListener("click", function () {
-          window.location.href = "./";
-        });
-      }
-      
-      var drawerhomeLink = document.getElementById("drawerhomeLink");
-      if (drawerhomeLink) {
-        drawerhomeLink.addEventListener("click", function (e) {
-          var popup = e.currentTarget.parentNode;
-          function isOverlay(node) {
-            return !!(
-              node &&
-              node.classList &&
-              node.classList.contains("popup-overlay")
-            );
-          }
-          while (popup && !isOverlay(popup)) {
-            popup = popup.parentNode;
-          }
-          if (isOverlay(popup)) {
-            popup.style.display = "none";
-          }
-        });
-      }
-      
-      var drawermapsLink = document.getElementById("drawermapsLink");
-      if (drawermapsLink) {
-        drawermapsLink.addEventListener("click", function () {
-          window.location.href = "/maps";
-        });
-      }
-      
-      var drawermapsLink = document.getElementById("drawermapsLink");
-      if (drawermapsLink) {
-        drawermapsLink.addEventListener("click", function (e) {
-          var popup = e.currentTarget.parentNode;
-          function isOverlay(node) {
-            return !!(
-              node &&
-              node.classList &&
-              node.classList.contains("popup-overlay")
-            );
-          }
-          while (popup && !isOverlay(popup)) {
-            popup = popup.parentNode;
-          }
-          if (isOverlay(popup)) {
-            popup.style.display = "none";
-          }
-        });
-      }
-      
-      var drawerdeSampaLink = document.getElementById("drawerdeSampaLink");
-      if (drawerdeSampaLink) {
-        drawerdeSampaLink.addEventListener("click", function () {
-          window.location.href = "/maps/de_sampa";
-        });
-      }
-      
-      var drawerdeSampaLink = document.getElementById("drawerdeSampaLink");
-      if (drawerdeSampaLink) {
-        drawerdeSampaLink.addEventListener("click", function (e) {
-          var popup = e.currentTarget.parentNode;
-          function isOverlay(node) {
-            return !!(
-              node &&
-              node.classList &&
-              node.classList.contains("popup-overlay")
-            );
-          }
-          while (popup && !isOverlay(popup)) {
-            popup = popup.parentNode;
-          }
-          if (isOverlay(popup)) {
-            popup.style.display = "none";
-          }
-        });
-      }
-      
-      var drawerdeCopaLink = document.getElementById("drawerdeCopaLink");
-      if (drawerdeCopaLink) {
-        drawerdeCopaLink.addEventListener("click", function () {
-          window.location.href = "/maps/de_copa";
-        });
-      }
-      
-      var drawerdeCopaLink = document.getElementById("drawerdeCopaLink");
-      if (drawerdeCopaLink) {
-        drawerdeCopaLink.addEventListener("click", function (e) {
-          var popup = e.currentTarget.parentNode;
-          function isOverlay(node) {
-            return !!(
-              node &&
-              node.classList &&
-              node.classList.contains("popup-overlay")
-            );
-          }
-          while (popup && !isOverlay(popup)) {
-            popup = popup.parentNode;
-          }
-          if (isOverlay(popup)) {
-            popup.style.display = "none";
-          }
-        });
-      }
-      
-      var drawerdeClubLink = document.getElementById("drawerdeClubLink");
-      if (drawerdeClubLink) {
-        drawerdeClubLink.addEventListener("click", function () {
-          window.location.href = "/maps/de_club";
-        });
-      }
-      
-      var drawerdeClubLink = document.getElementById("drawerdeClubLink");
-      if (drawerdeClubLink) {
-        drawerdeClubLink.addEventListener("click", function (e) {
-          var popup = e.currentTarget.parentNode;
-          function isOverlay(node) {
-            return !!(
-              node &&
-              node.classList &&
-              node.classList.contains("popup-overlay")
-            );
-          }
-          while (popup && !isOverlay(popup)) {
-            popup = popup.parentNode;
-          }
-          if (isOverlay(popup)) {
-            popup.style.display = "none";
-          }
-        });
-      }
-      
-      var drawerdeRaveLink = document.getElementById("drawerdeRaveLink");
-      if (drawerdeRaveLink) {
-        drawerdeRaveLink.addEventListener("click", function () {
-          window.location.href = "/maps/de_rave";
-        });
-      }
-      
-      var drawerdeRaveLink = document.getElementById("drawerdeRaveLink");
-      if (drawerdeRaveLink) {
-        drawerdeRaveLink.addEventListener("click", function (e) {
-          var popup = e.currentTarget.parentNode;
-          function isOverlay(node) {
-            return !!(
-              node &&
-              node.classList &&
-              node.classList.contains("popup-overlay")
-            );
-          }
-          while (popup && !isOverlay(popup)) {
-            popup = popup.parentNode;
-          }
-          if (isOverlay(popup)) {
-            popup.style.display = "none";
-          }
-        });
-      }
-      
-      var drawercsParkingLink = document.getElementById("drawercsParkingLink");
-      if (drawercsParkingLink) {
-        drawercsParkingLink.addEventListener("click", function () {
-          window.location.href = "/maps/cs_parking";
-        });
-      }
-      
-      var drawercsParkingLink = document.getElementById("drawercsParkingLink");
-      if (drawercsParkingLink) {
-        drawercsParkingLink.addEventListener("click", function (e) {
-          var popup = e.currentTarget.parentNode;
-          function isOverlay(node) {
-            return !!(
-              node &&
-              node.classList &&
-              node.classList.contains("popup-overlay")
-            );
-          }
-          while (popup && !isOverlay(popup)) {
-            popup = popup.parentNode;
-          }
-          if (isOverlay(popup)) {
-            popup.style.display = "none";
-          }
-        });
-      }
-      
-      var draweraboutLink = document.getElementById("draweraboutLink");
-      if (draweraboutLink) {
-        draweraboutLink.addEventListener("click", function () {
-          window.location.href = "/about";
-        });
-      }
-      
-      var draweraboutLink = document.getElementById("draweraboutLink");
-      if (draweraboutLink) {
-        draweraboutLink.addEventListener("click", function (e) {
-          var popup = e.currentTarget.parentNode;
-          function isOverlay(node) {
-            return !!(
-              node &&
-              node.classList &&
-              node.classList.contains("popup-overlay")
-            );
-          }
-          while (popup && !isOverlay(popup)) {
-            popup = popup.parentNode;
-          }
-          if (isOverlay(popup)) {
-            popup.style.display = "none";
-          }
-        });
-      }
-      
-      var draweraboutLink1 = document.getElementById("draweraboutLink1");
-      if (draweraboutLink1) {
-        draweraboutLink1.addEventListener("click", function () {
-          window.location.href = "/about";
-        });
-      }
-      
-      var draweraboutLink1 = document.getElementById("draweraboutLink1");
-      if (draweraboutLink1) {
-        draweraboutLink1.addEventListener("click", function (e) {
-          var popup = e.currentTarget.parentNode;
-          function isOverlay(node) {
-            return !!(
-              node &&
-              node.classList &&
-              node.classList.contains("popup-overlay")
-            );
-          }
-          while (popup && !isOverlay(popup)) {
-            popup = popup.parentNode;
-          }
-          if (isOverlay(popup)) {
-            popup.style.display = "none";
-          }
-        });
-      }
-      
-      var drawerauthorsLink = document.getElementById("drawerauthorsLink");
-      if (drawerauthorsLink) {
-        drawerauthorsLink.addEventListener("click", function () {
-          window.location.href = "/about/authors";
-        });
-      }
-      
-      var drawerauthorsLink = document.getElementById("drawerauthorsLink");
-      if (drawerauthorsLink) {
-        drawerauthorsLink.addEventListener("click", function (e) {
           var popup = e.currentTarget.parentNode;
           function isOverlay(node) {
             return !!(
@@ -404,35 +130,6 @@
       var drawericonClose = document.getElementById("drawericonClose");
       if (drawericonClose) {
         drawericonClose.addEventListener("click", function (e) {
-          var popup = e.currentTarget.parentNode;
-          function isOverlay(node) {
-            return !!(
-              node &&
-              node.classList &&
-              node.classList.contains("popup-overlay")
-            );
-          }
-          while (popup && !isOverlay(popup)) {
-            popup = popup.parentNode;
-          }
-          if (isOverlay(popup)) {
-            popup.style.display = "none";
-          }
-        });
-      }
-      
-      var drawerbutton = document.getElementById("drawerbutton");
-      if (drawerbutton) {
-        drawerbutton.addEventListener("click", function () {
-          window.open(
-            "https://steamcommunity.com/id/kurtabble/myworkshopfiles/?appid=730"
-          );
-        });
-      }
-      
-      var drawerbutton = document.getElementById("drawerbutton");
-      if (drawerbutton) {
-        drawerbutton.addEventListener("click", function (e) {
           var popup = e.currentTarget.parentNode;
           function isOverlay(node) {
             return !!(

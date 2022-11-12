@@ -70,7 +70,6 @@ body {
   flex-direction: row;
   padding: var(--padding-3xs) var(--padding-2xl) var(--padding-3xs) 0;
   box-sizing: border-box;
-  cursor: pointer;
   color: var(--black);
 }
 .home-a {
@@ -96,7 +95,6 @@ body {
   padding: var(--padding-3xs) var(--padding-xl);
   box-sizing: border-box;
   align-items: center;
-  cursor: pointer;
   color: inherit;
 }
 .csgo-maps-div {
@@ -105,7 +103,7 @@ body {
   align-items: flex-start;
   gap: var(--gap-0);
 }
-.links-div,
+.links-div2,
 .staff-div1 {
   box-sizing: border-box;
   justify-content: flex-start;
@@ -123,7 +121,7 @@ body {
   cursor: pointer;
   color: var(--branding);
 }
-.links-div {
+.links-div2 {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -187,29 +185,27 @@ body {
 }
 .secondary-b5 {
   position: relative;
-  font-size: var(--button-big-size);
   text-transform: uppercase;
   display: inline-block;
-  font-family: var(--button);
-  color: var(--branding);
-  text-align: center;
 }
-.button1,
+.button-a,
 .frame-div4,
 .steam-workshop-div {
   align-self: stretch;
   display: flex;
   justify-content: center;
 }
-.button1 {
-  cursor: pointer;
-  border: 0;
-  padding: var(--padding-md) var(--padding-3xl);
-  background-color: var(--black);
+.button-a {
+  text-decoration: none;
   border-radius: var(--br-sm);
+  background-color: var(--black);
   flex-direction: row;
+  padding: var(--padding-md) var(--padding-3xl);
   box-sizing: border-box;
   align-items: center;
+  text-align: center;
+  font-size: var(--button-big-size);
+  color: var(--branding);
 }
 .frame-div4,
 .steam-workshop-div {
@@ -261,16 +257,14 @@ body {
   animation: 0.25s ease 0s 1 normal forwards slide-in-right;
 }
 @media screen and (max-width: 428px) {
-  .button1,
+  .button-a,
+  .frame-div4,
   .visit-our-steam-workshop-and-f {
     width: 100%;
   }
-  .frame-div4,
-  .steam-workshop-div {
-    width: 100%;
-    text-align: center;
-  }
   .steam-workshop-div {
     flex-direction: column;
+    width: 100%;
+    text-align: center;
   }
 }
